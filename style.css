@@ -1,0 +1,174 @@
+* {			/*memanggil semua class dan id*/
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #FFF;
+	color: #555;
+	font-family: 'Lato','arial',san-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+
+}
+.clearfix{zoom:1;}
+.clearfix:after{
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/* REUSEABLE */ /* class dipake tidak hanya 1*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section {
+	padding: 80px 0;
+}
+.long-copy {
+	width: 70%;
+	margin: 0 auto;
+	line-height: 145%; /*jarak atas dan bawah antar kalimat dan paragrap*/
+	text-align: justify; /* text menjandi rata kanan dan kiri*/
+}
+.box {
+	padding: 1%;
+}
+.box p{
+	font-size: 90%;
+	line-height: 145%;
+}
+.icon-big {
+	font-size: 350%;
+	display: block;
+	color: #E67E22;
+	margin-bottom: 10px;
+}
+
+/* HEADING*/
+
+h1{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: #FFF;
+	font-size: 240%;
+	text-transform: uppercase;
+	font-weight: 300;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+}
+h2{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 180%;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+
+}
+h2:after{ /* membuat objek baru dih2 dengan content*/ 
+	content: " ";
+	display: block;
+	height: 2px;
+	background-color: #E67E22;
+	width: 100px;
+	margin: 0 auto; /* membuat posisi objek ke tengah*/
+	margin-top: 30px;
+
+}
+h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 110%;
+	margin-bottom: 15px;
+
+}
+
+/* section header*/
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg); /*pemangggilan background*/
+	height: 100vh; /*membuat gambar 100%*/
+	background-position: center; /*pengambilan posisi gamba menjadi tengah*/
+	background-size: cover; /*menyesuaikan widht background gambar*/
+}
+.logo { 
+	width: 100px;
+	height: auto;
+	float: left;	/* membuat objek lebih dari satu menjadi sejajar (kiri) */
+	margin-top: 20px; /*membuat jarak objek (atas) dengan objek lain*/ 
+
+ }
+ .main-nav {
+ 	float: right;
+ 	list-style: none; /* menghilangkan simbol / angka pada ul atau ol*/
+ 	margin-top: 55px;
+ 	 }
+
+ .main-nav li {
+ 	display: inline-block; /* membuat list item menjadi horizontal */
+ 	margin:40px;
+ }
+ .main-nav li a{
+ 	color: #FFF;
+ 	text-decoration: none; /* menghilangkan garis pada LINK */
+ 	text-transform: uppercase; /* membuat kapital*/
+ 	padding: 8px 0;
+ 	transition: border-bottom 0,3s; /* membuat transisi pada objek  */
+ 	border-bottom: 2px solid transparent;
+ 	font-size: 90%;
+ }
+ .main-nav li a:hover {
+ 	border-bottom: 2px solid #E67E22;
+ }
+.hero-text-box {
+	position: absolute; /* membuat objek bebas posisi*/
+	top: 50%;
+	left: 50%;
+	width: 1140px;
+	transform: translate(-50%, -50%); /* same function absolute*/
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	border: 1px solid #E67E22;
+	border-radius: 200px; /* membuat lingkaran pada objek*/
+	margin-right: 20px;
+	transition: background-color 0.3s,border 0.3s,color 0.2s;
+
+}
+
+.btn-full{
+	color: #FFF;
+	background-color: #E67E22
+}
+
+.btn-full:hover{
+	background-color: #CF6D17;
+
+}
+
+.btn-ghost{
+	color: #E67E22;
+}
+
+.btn-ghost:hover{
+	background-color: #CF6D17;
+	border:1px solid #CF6D17;
+	color: #FFF;
+}
+/* section meals*/
+.section-meals {
+	padding: 0px;
+}
+.meals-showcase {
+   list-style: none;
+    width:100%;
+}
